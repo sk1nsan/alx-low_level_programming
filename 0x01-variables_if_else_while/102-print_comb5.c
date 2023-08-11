@@ -22,7 +22,11 @@ int main(void)
 		{
 			for (k = i; k < 10; k++)
 			{
-				for (l = j + 1; l < 10; l++)
+				if (k > i)
+					l = 0;
+				else
+					l = j + 1;
+				while (l < 10)
 				{
 					putchar('0' + i);
 					putchar('0' + j);
@@ -35,6 +39,7 @@ int main(void)
 						putchar(' ');
 
 					}
+					l++;
 				}
 			}
 		}
