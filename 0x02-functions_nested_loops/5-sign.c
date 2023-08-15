@@ -24,6 +24,3 @@ int print_sign(int n)
 	_putchar('0');
 	return (0);
 }
-	 _putchar(r + '0');
-	return (0);
-}
