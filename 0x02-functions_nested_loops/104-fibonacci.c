@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	long unsigned int i, fib1 = 1, fib2 = 2;
+	 unsigned long int i, fib1 = 1, fib2 = 2;
 
-	for (i = 0; i < 99; i++)
+	for (i = 0; i < 50; i++)
 	{
 		printf("%lu, ", fib1);
 		printf("%lu, ", fib2);

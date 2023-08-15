@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	uintmax_t i, fib1 = 1, fib2 = 2, result = 0;
+	unsigned long int i, fib1 = 1, fib2 = 2, result = 0;
 
 	for (i = 0; i < 50; i++)
 	{
@@ -23,7 +23,7 @@ int main(void)
 			break;
 
 	}
-	printf("%ju\n", result);
+	printf("%lu\n", result);
 
 	return (0);
 }
