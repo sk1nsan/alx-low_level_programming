@@ -1,20 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-
-int _abs(int);
-
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-	return (0);
-}
-
 /**
  * _abs - returns the absolute vaule of n
  *

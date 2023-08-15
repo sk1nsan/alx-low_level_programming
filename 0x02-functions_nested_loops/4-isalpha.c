@@ -1,20 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-
-int _isalpha(int c);
-
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-	return (0);
-}
-
 /**
  * _isalpha - checks if c is an the alphabet or not
  *

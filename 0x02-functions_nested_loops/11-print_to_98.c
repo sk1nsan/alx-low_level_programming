@@ -1,20 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-
-void print_to_98(int n);
-
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-	return (0);
-}
-
 /**
  * print_to_98 - prints numbers from n to 98
  *
