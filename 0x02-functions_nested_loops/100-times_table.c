@@ -4,7 +4,7 @@
  *
  * @n: the value to specify the table
  *
- * Description: Prints times of table 
+ * Description: Prints times of table
  * of n
  *
  * Return: Nothing
@@ -16,8 +16,10 @@ void print_times_table(int n)
 	{	printf("0,");
 		for (j = 1; j < n + 1; j++)
 		{
-			if (i * j > 99)
-				printf(" %d", i * j);
+			if (i * j < 9)
+				printf("   %d", i * j);
+			else if (i * j < 99)
+				printf("  %d", i * j);
 			else
 				printf("  %d", i * j);
 			if (j != n)

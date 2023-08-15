@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 /**
  * main - Entry point
  *
@@ -7,7 +8,7 @@
 
 int main(void)
 {
-	unsigned long long int i, fib1 = 1, fib2 = 2, result = 0;
+	uintmax_t i, fib1 = 1, fib2 = 2, result = 0;
 
 	for (i = 0; i < 50; i++)
 	{
@@ -22,7 +23,7 @@ int main(void)
 			break;
 
 	}
-	printf("%llu\n", result);
+	printf("%ju\n", result);
 
 	return (0);
 }
