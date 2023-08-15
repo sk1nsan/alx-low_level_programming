@@ -10,7 +10,7 @@ int main(void)
 {
 	unsigned long int i, fib1 = 1, fib2 = 2, result = 0;
 
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 100; i++)
 	{
 
 		if (fib1 % 2 == 0)

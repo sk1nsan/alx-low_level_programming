@@ -10,7 +10,7 @@ int main(void)
 {
 	 unsigned long int i, fib1 = 1, fib2 = 2;
 
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 49; i++)
 	{
 		printf("%lu, ", fib1);
 		printf("%lu, ", fib2);

@@ -10,10 +10,12 @@ int main(void)
 {
 	unsigned long int i, fib1 = 1, fib2 = 2;
 
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 25; i++)
 	{
 		printf("%lu, ", fib1);
-		printf("%lu, ", fib2);
+		printf("%lu ", fib2);
+		if (i != 24)
+			putchar(',');
 		fib1 = fib1 + fib2;
 		fib2 = fib1 + fib2;
 	}
