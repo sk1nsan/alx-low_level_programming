@@ -19,13 +19,13 @@ int main(void)
 
 /**
  * print_alphabet - Prints lower case alphabets
- * 
+ *
  * Return: Nothing
  */
 
 void print_alphabet(void)
 {
-	for(int i = 97; i < 123; i++ )
+	for (int i = 97; i < 123; i++)
 		putchar(i);
 	putchar('\n');
 
