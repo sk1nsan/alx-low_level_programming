@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * print_last_digit - returns the last digit of n
- * Parameters: int n
+ * @n: the number to be checked
  * Return: n%10
  */
 

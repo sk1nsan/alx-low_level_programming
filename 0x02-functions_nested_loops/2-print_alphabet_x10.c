@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * print_alphabet - Prints lower case alphabets 10 times
- *
+ * Description: Prints lower case alphabets 10 times
+ * no uppercase
  * Return: Nothing
  */
 

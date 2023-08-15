@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * add - adds 2 numbers
- * Parameters: int a , int b
+ * @a: number to be added 
+ * @b: the other number to be added
  * Return: int a+b
  */
 

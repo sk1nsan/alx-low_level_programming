@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * _abs - returns the absolute vaule of n
- * Parameters: int n
+ * @n: the number to be checked
+ *
  * Return: n if n is greater than zero
  *         0 if n is equal to zero
  *         -n if n is less than zero
