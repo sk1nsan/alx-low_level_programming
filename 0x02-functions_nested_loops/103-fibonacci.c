@@ -8,19 +8,17 @@
 
 int main(void)
 {
-	unsigned long int i, fib1 = 1, fib2 = 2, result = 0;
+	unsigned long int i, fib1 = 0, fib2 = 1, result = 0;
 
-	for (i = 0; i < 100; i++)
-	{
+	while (fib1 + fib2 < 4000000)
+	{	fib1 = fib1 + fib2;
+		fib2 = fib1 + fib2;
 
+		if (fib2 % 2 == 0)
+			result += fib2;
 		if (fib1 % 2 == 0)
 			result += fib1;
-		if (fib2 % 2 == 0)
-			result += fib1;
-		fib1 = fib1 + fib2;
-		fib2 = fib1 + fib2;
-		if (fib2 > 4000000)
-			break;
+
 
 	}
 	printf("%lu\n", result);

@@ -13,9 +13,9 @@ int main(void)
 	for (i = 0; i < 25; i++)
 	{
 		printf("%lu, ", fib1);
-		printf("%lu ", fib2);
+		printf("%lu", fib2);
 		if (i != 24)
-			putchar(',');
+			printf(" ,");
 		fib1 = fib1 + fib2;
 		fib2 = fib1 + fib2;
 	}
