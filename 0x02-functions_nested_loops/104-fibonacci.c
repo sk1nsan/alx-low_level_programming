@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	uintmax_t i, fib1 = 1, fib2 = 2;
+	long unsigned int i, fib1 = 1, fib2 = 2;
 
 	for (i = 0; i < 99; i++)
 	{
-		printf("%ju, ", fib1);
-		printf("%ju, ", fib2);
+		printf("%lu, ", fib1);
+		printf("%lu, ", fib2);
 		fib1 = fib1 + fib2;
 		fib2 = fib1 + fib2;
 	}
