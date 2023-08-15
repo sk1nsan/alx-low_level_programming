@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * _islower - checks if the int c is lower case or not
- *
+ * Parameters: int c
  * Return: 1 if c is lowercase
  *	0 otherwise
  */

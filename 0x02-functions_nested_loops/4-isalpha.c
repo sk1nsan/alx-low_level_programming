@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * _isalpha - checks if c is an the alphabet or not
- *
+ * Parameters: int c
  * Return: 1 if c is in the alphabet
  *         0 otherwise
  */

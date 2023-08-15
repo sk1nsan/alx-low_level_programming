@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * print_sign - checks the sign of n and prints it
- *
+ * Parameters: int n
  * Return: 1 if n is greater than zero
  *         0 if n is equal to zero
  *         -1 if n is less than zero
