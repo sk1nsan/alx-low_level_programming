@@ -5,7 +5,7 @@
  *
  * Description: check if c
  * is in the alphabet or not
- * and returns 1 if it is otherwise 
+ * and returns 1 if it is otherwise
  * returns 0
  * Return: 1 if c is in the alphabet
  *         0 otherwise
