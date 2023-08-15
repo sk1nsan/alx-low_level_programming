@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	unsigned long int i, fib1 = 0, fib2 = 1, result = 0;
+	unsigned long int fib1 = 0, fib2 = 1, result = 0;
 
 	while (fib1 + fib2 < 4000000)
 	{	fib1 = fib1 + fib2;

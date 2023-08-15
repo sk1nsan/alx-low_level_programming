@@ -15,7 +15,7 @@ int main(void)
 		printf("%lu, ", fib1);
 		printf("%lu", fib2);
 		if (i != 24)
-			printf(" ,");
+			printf(", ");
 		fib1 = fib1 + fib2;
 		fib2 = fib1 + fib2;
 	}
