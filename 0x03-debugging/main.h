@@ -1,2 +1,2 @@
-#include "2-largest_number.c"
-#include "3-print_remaining_days.c"
+int largest_number(int a, int b, int c);
+void print_remaining_days(int month, int day, int year);
