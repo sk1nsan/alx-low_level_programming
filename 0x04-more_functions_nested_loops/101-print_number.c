@@ -1,5 +1,26 @@
-#include <stdio.h>
 #include "main.h"
+/**
+ * power -  x to the power y
+ *
+ * Description: Takes an integer x and raise
+ * to the exponent y
+ *
+ * @x: Base
+ * @y: Exponent
+ *
+ * Return: x^y
+ */
+
+
+int power(int x, int y)
+{
+	if (y == 0)
+		return (1);
+
+	return (x * power(x, y - 1));
+
+}
+
 /**
  * print_number - prints numbers inputed
  *
@@ -7,18 +28,12 @@
  *
  * Return: void
  */
-int power(int x, int y)
-{
-	if (y == 0)
-		return (1);
-	return (x * power(x, y-1));
-
-}
 
 
 void print_number(int n)
 {
 	int digits = 0;
+	int temp_n = n;
 
 	if (n == 0)
 	{
@@ -26,20 +41,22 @@ void print_number(int n)
 	}
 	else
 	{
-		if (n < 0 )
+		if (n < 0)
 		{
 			_putchar('-');
 			n = -n;
 		}
-		while (n / 10 != 0)
-			digits++;
-		while (digits != 0)
+		while (temp_n / 10 != 0)
 		{
-			_putchar('0' + n / power(10,n));
+			digits++;
+			temp_n /= 10;
 		}
-
-
+		while (digits != -1)
+		{
+			_putchar('0' + n / power(10, digits));
+			n = n - ((n / power(10, digits)) * power(10, digits));
+			digits--;
+		}
 	}
 	_putchar('\n');
-
 }
