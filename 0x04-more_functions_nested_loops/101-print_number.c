@@ -58,5 +58,4 @@ void print_number(int n)
 			digits--;
 		}
 	}
-	_putchar('\n');
 }
