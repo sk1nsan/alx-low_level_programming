@@ -54,7 +54,7 @@ void print_number(int n)
 		while (digits != -1)
 		{
 			_putchar('0' + n / power(10, digits));
-			n = n - ((n / power(10, digits)) * power(10, digits));
+			n = n % power(10, digits);
 			digits--;
 		}
 	}
