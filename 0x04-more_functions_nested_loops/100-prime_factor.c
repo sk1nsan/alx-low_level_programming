@@ -33,13 +33,13 @@ int is_prime(int n)
 
 int main(void)
 {
-	long n = 612852475143, i, result;
+	unsigned long n = 612852475143, i, result;
 
 	for (i = 1; i < sqrt(n); i += 2)
 	{
 		if (n % i == 0 && is_prime(i))
 			result = i;
 	}
-	printf("%ld\n", result);
+	printf("%lu\n", result);
 	return (0);
 }
