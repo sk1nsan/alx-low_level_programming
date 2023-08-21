@@ -30,7 +30,7 @@ int _isdigit(int c)
 
 int _atoi(char *s)
 {
-	int result = 0, sign = 0, i = 0;
+	unsigned int result = 0, sign = 0, i = 0;
 
 	while (s[i] != '\0')
 	{
