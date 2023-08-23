@@ -1,4 +1,4 @@
-#include "main.h"
+#include "_putchar.c"
 /**
  * power -  x to the power y
  *
