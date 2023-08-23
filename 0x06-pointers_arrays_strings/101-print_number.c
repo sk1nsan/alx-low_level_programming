@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include "main.h"
 /**
  * power -  x to the power y
  *
@@ -32,8 +32,8 @@ int power(int x, int y)
 
 void print_number(int n)
 {
-	unsigned int digits = 0;
-	unsigned int temp_n = n;
+	int digits = 0;
+	int temp_n = n;
 	unsigned int n1 = n;
 	if (n == 0)
 	{
