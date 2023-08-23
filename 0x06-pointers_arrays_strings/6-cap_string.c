@@ -16,8 +16,11 @@ char *cap_string(char *a)
 		{
 			for (j = 0; j < 13; j++)
 			{
-				if (a[i - 1] == s[j])
+				if (a[i - 1] == s[j] || i == 0)
+				{
 					a[i] -= 32;
+					break;
+				}
 			}
 		}
 	}

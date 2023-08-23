@@ -32,9 +32,9 @@ int power(int x, int y)
 
 void print_number(int n)
 {
-	unsigned int digits = 0;
-	unsigned int temp_n = n;
-	unsigned int n1 = n;
+	int digits = 0;
+	int temp_n = n;
+
 	if (n == 0)
 	{
 		_putchar('0');
@@ -44,7 +44,7 @@ void print_number(int n)
 		if (n < 0)
 		{
 			_putchar('-');
-			n1 = -n;
+			n = -n;
 		}
 		while (temp_n / 10 != 0)
 		{
@@ -53,8 +53,8 @@ void print_number(int n)
 		}
 		while (digits != -1)
 		{
-			_putchar('0' + n1 / power(10, digits));
-			n1 = n1 % power(10, digits);
+			_putchar('0' + n / power(10, digits));
+			n = n % power(10, digits);
 			digits--;
 		}
 	}
