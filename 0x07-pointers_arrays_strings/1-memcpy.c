@@ -1,11 +1,11 @@
 /**
- * _memset - copies n bytes src to dest
+ * _memcpy - copies n bytes src to dest
  *
  * @n: number of bytes
  * @src: place to be copied to
  * @dest: place to be copied from
  *
- * Return: src copied location
+ * Return: dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
