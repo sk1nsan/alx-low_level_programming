@@ -6,7 +6,7 @@
  * @a: array to be summed
  * @size: size of 2D square array
  *
- * Return: void 
+ * Return: void
  */
 
 void print_diagsums(int *a, int size)
@@ -16,7 +16,7 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < size; i++)
 		result += a[i * (size + 1)];
 	printf("%d, ", result);
-	result =0;
+	result = 0;
 	for (j = 0; j < size; j++)
 		result += a[(j + 1) * (size - 1)];
 	printf("%d\n", result);
