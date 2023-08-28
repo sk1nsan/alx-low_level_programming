@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * _strchr - Returns the first occurrence of c in s
  *
@@ -18,6 +19,6 @@ char *_strchr(char *s, char c)
 			return (&s[i]);
 	}
 
-	return (0);
+	return (NULL);
 
 }
