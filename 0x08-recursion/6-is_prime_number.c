@@ -18,7 +18,7 @@ int helper(int i, int n)
 	return (helper(i + 1, n));
 }
 /**
- * iS_prime_number - checks if n is prime
+ * is_prime_number - checks if n is prime
  *
  * @n: an integer
  *
