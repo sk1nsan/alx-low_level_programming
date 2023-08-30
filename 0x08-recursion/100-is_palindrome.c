@@ -1,22 +1,38 @@
 #include "main.h"
 /**
- * cpystring - return a copy of s
+ * strlength - returns length of s
  *
- * @src: string to be copied
- * @dest: destination of the copy
+ * @s: string to be checked
  *
- * Return: d a copy of s
+ * Return: length of s
  */
-char *cpystring(char *dest, char *src)
-{
-	int i;
 
-	for (i = 0; src[i] != '\0'; i++)
+int strlength(char *s)
+{
+	if (s[0] == '\0')
+		return (0);
+	return (strlength(s + 1) + 1);
+}
+
+/**
+ * strcpy1 - copy src to dest
+ *
+ * @src: source of copy
+ * @dest: dest of copy
+ * @i: staring point
+ *
+ * Return: void
+ */
+
+void strcpy1(char *dest, char *src, int i)
+{
+	if (src[i] == '\0')
 	{
-		dest[i] = src[i];
+		dest[i] = '\0';
+		return;
 	}
-	dest[i] = '\0';
-	return (dest);
+	dest[i] = src[i];
+	strcpy1(dest, src, i + 1);
 
 }
 /**
@@ -30,12 +46,10 @@ char *cpystring(char *dest, char *src)
 
 int helper(char *s)
 {
-	int i, j;
+	int j;
 
-	for (i = 0; s[i] != '\0'; i++)
-		;
-	j = (s[0] == s[i - 1]);
-	s[i - 1] = '\0';
+	j = (s[0] == s[strlength(s) - 1]);
+	s[strlength(s) - 1] = '\0';
 	return (j);
 }
 
@@ -52,8 +66,7 @@ int is_palindrome(char *s)
 {
 	char t[1000];
 
-	cpystring(t, s);
-
+	strcpy1(t, s, 0);
 	if (t[0] == '\0' || t[1] == '\0')
 		return (1);
 	if (helper(t))
