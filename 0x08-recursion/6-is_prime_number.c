@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * helper - checks if number is prime or not
  *
@@ -9,7 +8,6 @@
  * Return: 1 if prime
  * 0 otherwise
  */
-
 int helper(int i, int n)
 {
 
@@ -19,8 +17,6 @@ int helper(int i, int n)
 		return (0);
 	return (helper(i + 1, n));
 }
-
-
 /**
  * iS_prime_number - checks if n is prime
  *
@@ -29,7 +25,6 @@ int helper(int i, int n)
  * Return: 1 if prime
  *	0 otherwise
  */
-
 int is_prime_number(int n)
 {
 	if (n <= 1)
