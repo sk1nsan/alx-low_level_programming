@@ -49,7 +49,6 @@ int cent(int x)
 
 int main(int argc, char *argv[])
 {
-	int result = 0;
 	int x;
 
 	if (argc != 2)
