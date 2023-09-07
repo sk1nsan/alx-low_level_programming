@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _recalloc - reallocates memory
+ * _realloc - reallocates memory
  *
  * @ptr: pointer to previous memory
  * @old_size: old size of memory
