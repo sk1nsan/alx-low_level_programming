@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int (*ptr)(int, int);
 	int result;
-	int l:
+	int l;
 
 	if (argc != 4)
 	{
