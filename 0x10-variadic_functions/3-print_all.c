@@ -1,6 +1,5 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include <string.h>
 /**
  * print_all - print all types
  *
@@ -10,17 +9,15 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i, n;
+	int i;
 	va_list ap;
 	char *x;
 
-	n = strlen(format);
 	va_start(ap, format);
-	i = -1;
-	while (i < n - 1 && format)
+	i = 0;
+	while (format && format[i])
 	{
-		i++;
-		switch (format[i])
+		switch (format[i++])
 		{
 			case 'c':
 				printf("%c", va_arg(ap, int));
@@ -43,7 +40,7 @@ void print_all(const char * const format, ...)
 			default:
 				continue;
 		}
-		if (i < n - 1)
+		if (format[i])
 			printf(", ");
 	}
 	printf("\n");
