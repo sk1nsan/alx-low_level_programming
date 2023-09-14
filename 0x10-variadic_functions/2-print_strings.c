@@ -18,6 +18,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		printf("\n");
 		return;
+	}
 	if (separator == NULL)
 		separator = "";
 
