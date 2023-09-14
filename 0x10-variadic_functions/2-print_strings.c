@@ -14,7 +14,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list ap;
 	char *x;
 
-	if (n <= 0)
+	if (n == 0)
+	{
+		printf("\n");
 		return;
 	if (separator == NULL)
 		separator = "";
