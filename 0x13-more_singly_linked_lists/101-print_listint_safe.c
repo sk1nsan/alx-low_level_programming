@@ -22,7 +22,10 @@ size_t print_listint_safe(const listint_t *head)
 		for (i = 0; i < n; i++)
 		{
 			if (x[i]  == head)
+			{
+				printf("-> [%p] %d\n", (void *)head, head->n);
 				return (n);
+			}
 		}
 		printf("[%p] %d\n", (void *)head, head->n);
 		x[n] = head;
