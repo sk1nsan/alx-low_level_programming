@@ -3,13 +3,13 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - inset  node at index
+ * delete_nodeint_at_index - delete node at index
  *
  * @head: linked list
- * @idx: index of new node
- * @n: int of new node
+ * @index: index of new node
  *
- * Return: new node
+ * Return: 1 if successful
+ *	0 otherwise
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
