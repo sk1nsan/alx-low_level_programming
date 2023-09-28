@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_binary - prints int in binary
  *
