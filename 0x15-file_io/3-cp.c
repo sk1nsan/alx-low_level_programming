@@ -17,23 +17,23 @@
 int main(int argn, char *argv[])
 {
 	int to, from, x, y, z;
-	char *s = malloc(sizeof(char) * 1024);
+	char s[1024];
 
 	if (argn != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	from = open(argv[1], O_RDONLY);
 	if (from == -1)
 	{
-		dprintf(2, "Error: Can't read from file NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from);
 		exit(98);
 	}
 	to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (to == -1)
 	{
-		dprintf(2, "Error: Can't write to NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to);
 		exit(99);
 	}
 	while (1)
