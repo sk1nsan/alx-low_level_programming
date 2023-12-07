@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "lists.h"
 
-
 /**
  * delete_dnodeint_at_index - delete node at index
  *
@@ -9,7 +8,7 @@
  * @index: index of new node
  *
  * Return: 1 if successful
- *	0 otherwise
+ *	-1 otherwise
  */
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
@@ -34,6 +33,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		if (i == index - 1)
 		{
 			del = itr->next;
+			(itr->next)->prev = itr;
 			itr->next = (itr->next)->next;
 			free(del);
 			return (1);
