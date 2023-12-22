@@ -11,7 +11,7 @@
  *
  * Return: 1 if succ
  * 0 otherwise
-*/
+ */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -33,13 +33,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			free(curr->value);
 			curr->value = strdup(value);
+			if (!curr->value)
+				return (0);
 			return (1);
 		}
 		curr = curr->next;
 	}
 
 	hash_node = malloc(sizeof(hash_node_t));
-	if (!hash_node)
+	if (hash_node == NULL)
 		return (0);
 
 	hash_node->key = (char *)key;
