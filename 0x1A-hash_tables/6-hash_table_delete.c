@@ -25,12 +25,14 @@ void free_index(hash_node_t *head)
 		if (head->next == NULL)
 		{
 			free(head->value);
+			free(head->key);
 			free(head);
 			return;
 		}
 		del = head;
 		head = head->next;
 		free(del->value);
+		free(del->key);
 		free(del);
 	}
 }
