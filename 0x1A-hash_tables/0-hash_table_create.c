@@ -18,7 +18,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (!hash)
 		return (NULL);
 	hash->size = size;
-	hash->array = malloc(sizeof(hash_node_t *) * size);
+	/* calloc intilizes it to NULL so i can check if it's empty malloc doesn't */
+	hash->array = calloc(size, sizeof(hash_node_t *));
 	if (!(hash->array))
 		return (NULL);
 	return (hash);
