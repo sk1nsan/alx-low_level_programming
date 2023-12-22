@@ -27,15 +27,14 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			if (key == 1)
 			{
-				printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
+				printf("'%s': '%s'", curr->key, curr->value);
 				key = 0;
 				break;
 			}
-			printf(", '%s': '%s'", ht->array[i]->key, ht->array[i]->value);
+			printf(", '%s': '%s'", curr->key, curr->value);
 			curr = curr->next;
 
 		}
-
 	}
 	printf("}\n");
 }
